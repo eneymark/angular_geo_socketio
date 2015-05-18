@@ -1,0 +1,8 @@
+div.name enter your name 
+input(type="text", ng-model="name")
+
+div.role role 
+select(ng-model="role", ng-options="'I am a ' + value for value in roles")
+
+div.button 
+input(type="button", ng-show="name && role", ng-click="connect()", value="connect")
